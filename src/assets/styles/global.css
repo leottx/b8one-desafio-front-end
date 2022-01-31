@@ -1,0 +1,63 @@
+/* VARIAVEIS */
+:root {
+  --white: #ffffff;
+  --light-blue: #e1e7fa;
+  --gray-100: #e9e9e9;
+  --gray-200: #cfd1d2;
+  --gray-300: #9fa3a6;
+  --gray-400: #40464d;
+  --gray-500: #030303;
+  --green-100: #daf4cd;
+  --green-200: #53cc71;
+  --green-300: #40b25c;
+  --green-400: #008f00;
+  --green-500: #2d8a44;
+  --salmon-100: #ffa688;
+  --salmon-200: #ff8861;
+  --salmon-300: #e36305;
+  --salmon-400: #80351d;
+  --red-100: #f6cbcb;
+  --red-200: #e63737;
+  --yellow-100: #ffffd8;
+  --yellow-200: #ffea7d;
+}
+
+/* SMOOTH RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: var(--white);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
