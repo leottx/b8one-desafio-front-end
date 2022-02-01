@@ -44,6 +44,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   background: var(--white);
+  color: var(--gray-500);
 }
 
 body,
@@ -72,4 +73,52 @@ button {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.tag-tint {
+  border-radius: 0.4rem;
+  background: var(--red-100);
+  color: var(--red-200);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.btn-default {
+  padding: 1.6rem 3.2rem;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: var(--green-300);
+  border-radius: 0.4rem;
+  line-height: 1.5;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+
+.btn-default img {
+  height: 1.8rem;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(139deg)
+    brightness(104%) contrast(101%);
+}
+
+.btn-default:hover {
+  background: var(--green-200);
+  border: 1px solid var(--green-500);
+}
+
+.btn-highlight {
+  background: var(--salmon-300);
+}
+
+.btn-highlight:hover {
+  background: var(--salmon-200);
+  border: 1px solid var(--salmon-400);
 }
