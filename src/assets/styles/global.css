@@ -35,6 +35,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   background: var(--white);
@@ -44,7 +50,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -60,4 +66,10 @@ button {
   cursor: pointer;
   border: none;
   background: transparent;
+}
+
+/* GERAIS */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
