@@ -1,0 +1,133 @@
+.header {
+  background: var(--white);
+}
+
+.header-top {
+  padding: 1.2rem 2rem;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 7rem;
+  height: auto;
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.search input {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search:focus-within {
+  border: 1px solid var(--gray-300);
+}
+
+.search img {
+  width: 2.4rem;
+}
+
+.btn-bag img {
+  width: 24px;
+}
+
+.btn-bag {
+  position: relative;
+}
+
+.btn-bag::after {
+  content: '0';
+  color: var(--white);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: var(--salmon-300);
+  top: -8px;
+  right: -8px;
+  font-weight: 600;
+}
+
+.header-middle {
+  background: var(--gray-500);
+  padding: 1rem 0 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.header-middle .container {
+  max-width: (1440px + 2rem);
+}
+
+.navbar {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.navbar a {
+  display: inline-block;
+  white-space: nowrap;
+  color: var(--white);
+}
+
+.header-bottom {
+  border-bottom: 1px solid var(--gray-100);
+  padding: 1rem 2rem;
+}
+
+.header-bottom ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-bottom li {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-bottom li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  right: -17px;
+  background: url('~@images/icon-right-arrow.svg') no-repeat center;
+}
+
+.header-bottom a {
+  color: var(--gray-500);
+}
+
+a.active {
+  color: var(--salmon-300);
+}
