@@ -59,10 +59,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@Images': path.resolve(__dirname, 'src/assets/images/'),
-      '@Fonts': path.resolve(__dirname, 'src/assets/fonts/'),
-      '@Styles': path.resolve(__dirname, 'src/assets/styles'),
-      '@Utils': path.resolve(__dirname, 'src/utils/'),
+      '@images': path.resolve(__dirname, 'src/assets/images/'),
+      '@fonts': path.resolve(__dirname, 'src/assets/fonts/'),
+      '@styles': path.resolve(__dirname, 'src/assets/styles'),
+      '@utils': path.resolve(__dirname, 'src/utils/'),
     },
   },
 };
