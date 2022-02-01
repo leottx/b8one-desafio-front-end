@@ -75,20 +75,21 @@
 }
 
 .header-middle .container {
-  max-width: (1440px + 2rem);
+  max-width: calc(1440px + 2rem);
 }
 
 .navbar {
   overflow-x: scroll;
   scrollbar-width: none;
+  margin: 0 auto;
 }
 
 .navbar ul {
   display: flex;
   flex-wrap: nowrap;
   gap: 2rem;
-  margin: 0 auto;
   width: fit-content;
+  padding-right: 2rem;
 }
 
 .navbar a {
@@ -125,7 +126,7 @@
 }
 
 .header-bottom a {
-  color: var(--gray-500);
+  color: inherit;
 }
 
 a.active {
