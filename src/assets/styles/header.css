@@ -75,7 +75,7 @@
 }
 
 .header-middle .container {
-  max-width: calc(1440px + 2rem);
+  max-width: calc(1376px + 2rem);
 }
 
 .navbar {
@@ -122,7 +122,7 @@
   height: 12px;
   width: 12px;
   right: -17px;
-  background: url('~@images/icon-right-arrow.svg') no-repeat center;
+  background: url('~@images/icon-right-arrow-bold.svg') no-repeat center;
 }
 
 .header-bottom a {
