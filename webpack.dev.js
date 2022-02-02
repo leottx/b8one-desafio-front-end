@@ -8,15 +8,11 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  resolve: {
-    extensions: ['.js'],
-  },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(sass|css|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
