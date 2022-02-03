@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 new Swiper(document.getElementById('bought'), {
   slidesPerView: 2,
-  spaceBetween: 16,
+  spaceBetween: 8,
   loop: true,
   lazyLoading: true,
   keyboard: {
@@ -29,6 +29,7 @@ new Swiper(document.getElementById('bought'), {
     },
     1024: {
       slidesPerView: 5,
+      spaceBetween: 16,
     },
     1280: {
       slidesPerView: 6,
@@ -38,7 +39,7 @@ new Swiper(document.getElementById('bought'), {
 
 new Swiper(document.getElementById('viewed'), {
   slidesPerView: 2,
-  spaceBetween: 16,
+  spaceBetween: 8,
   loop: true,
   lazyLoading: true,
   keyboard: {
@@ -61,5 +62,19 @@ new Swiper(document.getElementById('viewed'), {
     1280: {
       slidesPerView: 6,
     },
+  },
+});
+
+new Swiper(document.getElementById('trending'), {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: true,
+  lazyLoading: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    prevEl: document.getElementById('carousel-control-trending-left'),
+    nextEl: document.getElementById('carousel-control-trending-right'),
   },
 });
