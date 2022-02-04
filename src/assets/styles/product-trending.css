@@ -13,20 +13,9 @@
 .product-trending .image-wrapper img {
   display: block;
   width: 100%;
-  height: 19.2rem;
+  height: 192px;
   object-fit: cover;
   object-position: 64% center;
-}
-
-.product-trending .carousel-controls {
-  right: -20px;
-}
-
-.product-trending .carousel-control {
-  background: var(--white);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
 }
 
 .about-trending {
@@ -89,4 +78,41 @@
 
 .trending-text a {
   color: var(--blue-200);
+}
+
+@media screen and (min-width: 768px) {
+  .product-trending .container {
+    padding: 3.2rem 3.2rem 6.4rem;
+  }
+
+  .product-trending .image-wrapper img {
+    height: 320px;
+  }
+
+  .swiper.product-trending-swiper {
+    margin-bottom: 1.8rem;
+  }
+
+  .about-trending {
+    padding-top: 4.6rem;
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .trending-text {
+    max-width: 1028px;
+  }
+
+  .trending-text ul {
+    list-style-type: initial;
+    list-style-position: inside;
+  }
+
+  .btn-accordion,
+  .read-more {
+    display: none;
+  }
+
+  .about-trending h2 {
+    margin-bottom: 2.4rem;
+  }
 }

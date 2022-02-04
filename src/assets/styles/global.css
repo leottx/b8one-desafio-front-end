@@ -153,15 +153,24 @@ button {
   display: none;
   position: absolute;
   top: 50%;
-  left: 2.4rem;
-  right: 2.4rem;
+  left: 8px;
+  right: 8px;
   transform: translateY(-50%);
   justify-content: space-between;
   z-index: 1000;
 }
 
 .carousel-control {
-  transition: opacity 0.3s;
+  background: rgba(255, 255, 255, 0.5);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: all 0.15;
+}
+
+.carousel-control:hover {
+  background: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.22));
 }
 
 .carousel-control img {
