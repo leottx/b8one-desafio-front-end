@@ -38,6 +38,7 @@
 
 .search input::placeholder {
   color: var(--gray-400);
+  opacity: 0;
 }
 
 .search:focus-within {
@@ -165,6 +166,10 @@ a.active {
   .search {
     border: 1px solid var(--gray-300);
     padding: 0.8rem 2rem;
+  }
+
+  .search input::placeholder {
+    opacity: 1;
   }
 
   .search input {
