@@ -68,3 +68,44 @@
 .offers-form button {
   font-size: 1.4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .offers {
+    padding: 3.6rem;
+  }
+
+  .offers h2 {
+    max-width: none;
+    font-size: 3.2rem;
+    flex-grow: 3;
+  }
+
+  .offers-form {
+    max-width: 470px;
+  }
+
+  .offers-form button {
+    padding: 1.2rem 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offers .container {
+    max-width: 1077px;
+    flex-direction: row;
+    gap: 6.4rem;
+  }
+
+  .offers-form {
+    flex-direction: row;
+    max-width: initial;
+  }
+
+  .offers h2 {
+    min-width: fit-content;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+}
