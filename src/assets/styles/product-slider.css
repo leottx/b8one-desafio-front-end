@@ -70,7 +70,27 @@
 }
 
 @media screen and (min-width: 768px) {
+  .product-slider .container {
+    padding: 1.6rem 3.2rem;
+  }
+
   .swiper-slide button {
     display: none;
+  }
+
+  .product-slider .image-wrapper img {
+    height: 184px;
+  }
+
+  .product-slider .description h3 {
+    font-size: 1.4rem;
+  }
+
+  .price-wrapper strong {
+    font-size: 2rem;
+  }
+
+  .product-slider .swiper-slide {
+    padding: 1.6rem 1.6rem 2.4rem;
   }
 }

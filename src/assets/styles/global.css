@@ -153,8 +153,8 @@ button {
   display: none;
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 2.4rem;
+  right: 2.4rem;
   transform: translateY(-50%);
   justify-content: space-between;
   z-index: 1000;
@@ -173,5 +173,9 @@ button {
 @media screen and (min-width: 768px) {
   .carousel-controls {
     display: flex;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }
