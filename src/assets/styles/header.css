@@ -213,6 +213,10 @@ a.active {
     max-width: calc(1376px + 3.2rem);
   }
 
+  .navbar ul {
+    gap: 3.2rem;
+  }
+
   .header-bottom {
     padding: 1.2rem 3.2rem;
   }
