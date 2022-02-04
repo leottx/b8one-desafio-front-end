@@ -48,11 +48,17 @@
   min-width: 0;
   width: 100%;
   outline: none;
+  font-weight: 500;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--gray-300);
 }
 
 .input-wrapper img {
   filter: invert(53%) sepia(78%) saturate(364%) hue-rotate(83deg)
     brightness(96%) contrast(88%);
+  height: 22px;
 }
 
 .input-wrapper:focus-within {
