@@ -197,6 +197,7 @@ a.active {
 
   .btn-opt {
     font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .btn-opt.btn-signin,
