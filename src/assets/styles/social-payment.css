@@ -82,3 +82,31 @@
   height: 12px;
   margin-left: 0.9rem;
 }
+
+@media screen and (min-width: 768px) {
+  .social-payment {
+    padding: 0 3.2rem 5.2rem;
+  }
+
+  .social-payment .container {
+    padding-top: 6.4rem;
+    border-top: 1px solid var(--gray-400);
+    gap: 6.4rem;
+  }
+
+  .social-payment-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-list {
+    margin-right: 100px;
+  }
+
+  .more-info {
+    max-width: 1028px;
+    margin: 0 auto;
+  }
+}
+
+/* border-bottom: 1px solid rgba(255, 255, 255, 0.16); */

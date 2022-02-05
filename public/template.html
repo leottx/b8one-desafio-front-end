@@ -21,14 +21,38 @@
               <img src="~@images/logo-b8one-dark.png" alt="Logo da b8One" />
             </a>
             <div class="search">
-              <input type="search" name="" id="" />
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="What are you looking for?"
+              />
               <button>
                 <img src="~@images/icon-search.svg" alt="Barra de pesquisa" />
               </button>
             </div>
-            <button class="btn-bag" data-content="0">
-              <img src="~@images/icon-bag.svg" alt="Botão da sacola" />
-            </button>
+            <ul class="header-btn-list">
+              <li>
+                <button class="btn-opt btn-signin">
+                  <img src="~@images/icon-user.svg" alt="Botão de sign in" />
+                  sign&nbsp;in
+                </button>
+              </li>
+              <li>
+                <button class="btn-opt btn-wishlist">
+                  <img
+                    src="~@images/icon-empty-heart.svg"
+                    alt="Botão da wishlist"
+                  />
+                  wishlist
+                </button>
+              </li>
+              <li>
+                <button class="btn-opt btn-bag" data-content="0">
+                  <img src="~@images/icon-bag.svg" alt="Botão da sacola" />
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="header-middle">
@@ -68,7 +92,10 @@
                   &#40;Late 2019, Space Gray&#41;</a
                 >
               </h1>
-              <span class="product-sku">Ref: 000000</span>
+              <div class="info">
+                <span class="product-sku">Ref: 000000</span>
+                <span class="read-more">Read full description</span>
+              </div>
             </div>
             <figure class="product-img">
               <img
@@ -708,7 +735,27 @@
                   million iPad apps on the App Store, iPad Air is ready for any
                   task, anywhere.
                 </p>
-                <a href="#">Read more</a>
+                <ul>
+                  <li>
+                    10.5-inch Retina display with True Tone and wide color1 ’’
+                  </li>
+                  <li>A12 Bionic chip</li>
+                  <li>Touch ID fingerprint sensor and Apple Pay</li>
+                  <li>8MP back camera, 7MP FaceTime HD front camera</li>
+                  <li>Stereo speakers</li>
+                  <li>802.11ac Wi-Fi and Gigabit-class LTE cellular data4</li>
+                  <li>Up to 10 hours of battery life3</li>
+                  <li>Lightning connector for charging and accessories</li>
+                  <li>
+                    iOS 12 with Group FaceTime, shared augmented reality
+                    experiences, Screen Time, and more
+                  </li>
+                </ul>
+                <p>
+                  Go to <a href="#">apple.com/ipad-air/specs</a> for a complete
+                  set.
+                </p>
+                <a href="#" class="read-more">Read more</a>
               </div>
             </div>
           </div>
@@ -717,7 +764,7 @@
       <footer>
         <section class="offers">
           <div class="container">
-            <h2>Get news & special offers!</h2>
+            <h2>Get news &amp; special offers!</h2>
             <form action="" class="offers-form">
               <div class="input-wrapper">
                 <img src="~@images/icon-mail.svg" alt="Campo de email" />
@@ -736,92 +783,94 @@
         </section>
         <section class="contact">
           <div class="container">
-            <h4>Section name</h4>
-            <h4>Section name</h4>
-            <ul class="contact-link-list">
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-            </ul>
-            <ul class="contact-link-list">
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-            </ul>
-            <ul class="contact-link-list">
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-            </ul>
-            <ul class="contact-link-list">
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-              <li>
-                <a href="#">Sitemap link</a>
-              </li>
-            </ul>
-            <div class="btn-contact-wrapper">
-              <button class="btn-default">
-                <img
-                  src="~@images/icon-phone.svg"
-                  alt="Botão para contato telefônico"
-                />
-                Call us
-              </button>
-              <button class="btn-default btn-highlight">
-                <img
-                  src="~@images/icon-mail.svg"
-                  alt="Botão para contato via email"
-                />
-                Send a message
-              </button>
-              <p><a href="#">Click here</a> to see our opening hours</p>
+            <div class="contact-grid">
+              <h4 class="first-title">Section name</h4>
+              <h4 class="secont">Section name</h4>
+              <ul class="contact-link-list">
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+              </ul>
+              <ul class="contact-link-list">
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+              </ul>
+              <ul class="contact-link-list">
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+              </ul>
+              <ul class="contact-link-list">
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap link</a>
+                </li>
+              </ul>
+              <div class="btn-contact-wrapper">
+                <button class="btn-default">
+                  <img
+                    src="~@images/icon-phone.svg"
+                    alt="Botão para contato telefônico"
+                  />
+                  Call us
+                </button>
+                <button class="btn-default btn-highlight">
+                  <img
+                    src="~@images/icon-mail.svg"
+                    alt="Botão para contato via email"
+                  />
+                  Send a message
+                </button>
+                <p><a href="#">Click here</a> to see our opening hours</p>
+              </div>
             </div>
           </div>
         </section>
