@@ -118,7 +118,10 @@
 
   .btn-contact-wrapper {
     margin-top: 0;
-    grid-column: 10 / 12;
-    width: calc(100% + 90px);
+    grid-column: 10 / -1;
+  }
+
+  .btn-contact-wrapper button {
+    padding: 0 2.4rem;
   }
 }

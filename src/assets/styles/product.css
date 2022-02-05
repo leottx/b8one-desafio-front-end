@@ -244,6 +244,7 @@ span.disabled {
 .product-checkout > p:last-child {
   text-align: center;
   font-size: 1.2rem;
+  margin-top: auto;
 }
 
 @media screen and (min-width: 768px) {
