@@ -1,4 +1,4 @@
-.product-trending .container {
+.product-trending {
   padding: 1.6rem 1.6rem 4.8rem;
 }
 
@@ -81,7 +81,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .product-trending .container {
+  .product-trending {
     padding: 3.2rem 3.2rem 6.4rem;
   }
 
