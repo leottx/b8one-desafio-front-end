@@ -1,0 +1,57 @@
+{
+  "name": "b8one-desafio-front-end",
+  "version": "1.0.0",
+  "description": "Desafio da primeira etapa eliminatória do curso de Desenvolvimento Front End promovido pela b8One Academy",
+  "main": "src/index.js",
+  "scripts": {
+    "commit": "cz",
+    "dev": "webpack serve --config ./webpack.dev.js",
+    "prod": "webpack --config ./webpack.prod.js",
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leottx/b8one-desafio-front-end.git"
+  },
+  "author": "Leonardo Teixeira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leottx/b8one-desafio-front-end/issues"
+  },
+  "homepage": "https://github.com/leottx/b8one-desafio-front-end#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@squoosh/lib": "^0.4.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "commitizen": "^4.2.4",
+    "css-loader": "^6.5.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^3.2.3",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "swiper": "^8.0.1"
+  }
+}

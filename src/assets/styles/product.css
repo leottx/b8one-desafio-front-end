@@ -1,0 +1,296 @@
+.product {
+  padding: 1.6rem;
+}
+
+.highlight {
+  color: var(--green-300);
+}
+
+.product .container {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.product-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.product-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.product-title a {
+  color: inherit;
+}
+
+.product-name .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.product-sku {
+  font-weight: 500;
+}
+
+.read-more {
+  display: none;
+  color: var(--green-300);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product-img img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.product-style p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.style-name span {
+  font-weight: 500;
+}
+
+.color-picker {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.color-picker span {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  outline: 1px solid var(--gray-100);
+  cursor: pointer;
+}
+
+.color-picker span:first-child {
+  background: var(--gray-400);
+}
+
+.color-picker span:nth-child(2) {
+  background: var(--salmon-100);
+}
+
+.color-picker span:last-child {
+  background: var(--gray-300);
+}
+
+.product-size {
+  margin: 2.4rem 0 3.2rem;
+}
+
+.size-picker {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.size-picker span {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--gray-100);
+  cursor: pointer;
+}
+
+span.disabled {
+  background: var(--gray-100);
+  color: var(--gray-300);
+}
+
+.product-shipping {
+  padding: 2rem 1.6rem;
+  border: 1px solid var(--gray-100);
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.shipping-icon {
+  width: 20%;
+  max-width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shipping-icon img {
+  width: 2.8rem;
+}
+
+.shipping-text {
+  font-size: 1.2rem;
+}
+
+.shipping-text h2 {
+  font-size: 1.4rem;
+}
+
+.shipping-text p {
+  margin: 0.4rem 0 1rem;
+}
+
+.shipping-text a {
+  font-weight: 600;
+}
+
+.product-price h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.product-checkout {
+  padding: 2.4rem;
+  border: 1px solid var(--gray-100);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.discount span:first-child {
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.product-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+}
+
+.item-picker {
+  grid-column: 1;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid var(--gray-100);
+  border-radius: 0.4rem;
+}
+
+.item-picker button {
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all 0.15s;
+}
+
+.item-picker button:hover {
+  filter: brightness(0.7);
+}
+
+.item-picker button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--green-200);
+  border-radius: 100px;
+}
+
+.item-picker button:last-child:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) rotate(90deg);
+  background: var(--green-200);
+  border-radius: 100px;
+}
+
+.warning {
+  grid-column: 2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+.warning span {
+  color: var(--red-200);
+  font-weight: 600;
+}
+
+.product-action .btn-default {
+  grid-column: 1 / -1;
+  padding: 1.6rem 3.2rem;
+}
+
+.product-action .btn-default:first-of-type {
+  margin: 1.6rem 0 0.8rem;
+}
+
+.product-checkout > p:last-child {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .product .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+
+  .product-name {
+    grid-column: 6/-1;
+    grid-row: 1;
+  }
+
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .read-more {
+    display: inline;
+  }
+
+  .product-img {
+    grid-column: 1/5;
+    grid-row: 1/-1;
+  }
+
+  .product-style {
+    grid-column: 6/9;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+
+  .product-shipping {
+    margin-top: auto;
+  }
+
+  .product-checkout {
+    grid-column: 9/-1;
+    grid-row: 2;
+  }
+}
