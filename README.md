@@ -2,7 +2,7 @@
 
 ![badge status](https://img.shields.io/badge/Project%20Status-done-green?)
 
-<img src="./screenshot-b8one.png" >
+<img src="./screenshot-b8one-final.png" >
 
 ## Sobre
 
