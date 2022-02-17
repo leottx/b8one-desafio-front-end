@@ -47,7 +47,20 @@
 .product-img img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 448px;
+  margin: 0 auto;
+}
+
+.product-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.product-style {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 .product-style p {
@@ -86,8 +99,12 @@
   background: var(--gray-300);
 }
 
+span.selected {
+  outline: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
 .product-size {
-  margin: 2.4rem 0 3.2rem;
+  margin-top: 2.4rem;
 }
 
 .size-picker {
@@ -101,7 +118,7 @@
 .size-picker span {
   padding: 1.2rem 2.4rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--gray-100);
+  outline: 1px solid var(--gray-100);
   cursor: pointer;
 }
 
@@ -183,6 +200,7 @@ span.disabled {
   font-weight: 500;
   border: 1px solid var(--gray-100);
   border-radius: 0.4rem;
+  position: relative;
 }
 
 .item-picker button {
@@ -220,6 +238,12 @@ span.disabled {
   border-radius: 100px;
 }
 
+.item-picker span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .warning {
   grid-column: 2;
   font-size: 1.2rem;
@@ -247,6 +271,21 @@ span.disabled {
   margin-top: auto;
 }
 
+@media screen and (min-width: 576px) {
+  .product-controls {
+    flex-direction: row;
+  }
+
+  .product-controls > * {
+    flex-grow: 1;
+  }
+
+  .product-shipping {
+    flex-grow: 1;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .product {
     padding: 2.4rem 3.2rem;
@@ -256,12 +295,12 @@ span.disabled {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto;
-    column-gap: 3.2rem;
+    column-gap: 1.6rem;
     row-gap: 2.4rem;
   }
 
   .product-name {
-    grid-column: 6/-1;
+    grid-column: 7/-1;
     grid-row: 1;
   }
 
@@ -274,16 +313,19 @@ span.disabled {
   }
 
   .product-img {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 1/-1;
   }
 
-  .product-style {
-    grid-column: 6/9;
-    grid-row: 2;
-    display: flex;
+  .product-controls {
     flex-direction: column;
+    grid-column: 7 / -1;
+    grid-row: 2;
+  }
+
+  .product-style {
     padding-top: 2.4rem;
+    flex-grow: 1;
   }
 
   .product-shipping {
@@ -291,7 +333,17 @@ span.disabled {
   }
 
   .product-checkout {
-    grid-column: 9/-1;
-    grid-row: 2;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-controls {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+
+  .product-img {
+    grid-column: 1/ 5;
   }
 }
