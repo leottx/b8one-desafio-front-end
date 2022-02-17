@@ -104,8 +104,14 @@
 
 .navbar {
   overflow-x: scroll;
+  /* Torna o scrollbar invisível no Firefox */
   scrollbar-width: none;
   margin: 0 auto;
+}
+
+/* Torna o scrollbar invisível em navegares que utilizem o Chromium */
+.navbar::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar ul {

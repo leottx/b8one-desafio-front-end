@@ -20,11 +20,11 @@
 }
 
 .offers-form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  max-width: 470px;
+  width: 100%;
+  max-width: 696px;
 }
 
 .offers-form > * {
@@ -35,10 +35,10 @@
 .input-wrapper {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   border-radius: 0.4rem;
   background: var(--white);
   padding: 0 2.4rem;
+  gap: 1.4rem;
 }
 
 .input-wrapper input {
@@ -88,14 +88,14 @@
 
 @media screen and (min-width: 1024px) {
   .offers .container {
-    max-width: 1077px;
+    max-width: 1164px;
     flex-direction: row;
     gap: 6.4rem;
   }
 
   .offers-form {
     flex-direction: row;
-    max-width: initial;
+    gap: 1.6rem;
   }
 
   .offers h2 {
