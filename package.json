@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/leottx/b8one-desafio-front-end/issues"
   },
-  "homepage": "https://github.com/leottx/b8one-desafio-front-end#readme",
+  "homepage": "https://leottx.github.io/b8one-desafio-front-end/",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
